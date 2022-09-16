@@ -1,0 +1,19 @@
+/Library/Java/JavaVirtualMachines/jdk1.8.0_291.jdk/Contents/Home/bin/java  -server -Dloader.path=../lib -Xmx2048m -Xms2048m -Xmn1024m -Xss512k -XX:SurvivorRatio=10 -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=256m -XX:MaxDirectMemorySize=1024m -XX:-OmitStackTraceInFastThrow -XX:-UseAdaptiveSizePolicy -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/Users/yafeiwang/mycode/java/seata/logs/java_heapdump.hprof -XX:+DisableExplicitGC -XX:+CMSParallelRemarkEnabled -XX:+UseCMSInitiatingOccupancyOnly -XX:CMSInitiatingOccupancyFraction=75 -Xloggc:/Users/yafeiwang/mycode/java/seata/logs/seata_gc.log -verbose:gc -XX:+PrintGCDetails  -XX:+PrintGCDateStamps -XX:+PrintGCTimeStamps -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=10 -XX:GCLogFileSize=100M -Dio.netty.leakDetectionLevel=advanced -Dapp.name=seata-server -Dapp.pid=70192 -Dapp.home=/Users/yafeiwang/mycode/java/seata -Dbasedir=/Users/yafeiwang/mycode/java/seata -Dspring.config.location=/Users/yafeiwang/mycode/java/seata/conf/application.yml -Dlogging.config=/Users/yafeiwang/mycode/java/seata/conf/logback-spring.xml -jar /Users/yafeiwang/mycode/java/seata/target/seata-server.jar -p 8091 -h 127.0.0.1 -m db
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.PropertiesLauncher.main(PropertiesLauncher.java:467)
+Caused by: java.lang.NoClassDefFoundError: org/springframework/boot/SpringApplication
+	at io.seata.server.ServerApplication.main(ServerApplication.java:30)
+	... 8 more
+Caused by: java.lang.ClassNotFoundException: org.springframework.boot.SpringApplication
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at org.springframework.boot.loader.LaunchedURLClassLoader.loadClass(LaunchedURLClassLoader.java:151)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 9 more

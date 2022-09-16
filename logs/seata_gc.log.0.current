@@ -1,0 +1,15 @@
+Java HotSpot(TM) 64-Bit Server VM (25.291-b10) for bsd-amd64 JRE (1.8.0_291-b10), built on Apr  8 2021 02:17:24 by "java_re" with gcc 4.2.1 Compatible Apple LLVM 11.0.0 (clang-1100.0.33.17)
+Memory: 4k page, physical 16777216k(733388k free)
+
+/proc/meminfo:
+
+CommandLine flags: -XX:CMSInitiatingOccupancyFraction=75 -XX:+CMSParallelRemarkEnabled -XX:CompressedClassSpaceSize=260046848 -XX:+DisableExplicitGC -XX:GCLogFileSize=104857600 -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/Users/yafeiwang/mycode/java/seata/logs/java_heapdump.hprof -XX:InitialHeapSize=2147483648 -XX:MaxDirectMemorySize=1073741824 -XX:MaxHeapSize=2147483648 -XX:MaxMetaspaceSize=268435456 -XX:MaxNewSize=1073741824 -XX:MetaspaceSize=134217728 -XX:NewSize=1073741824 -XX:NumberOfGCLogFiles=10 -XX:-OmitStackTraceInFastThrow -XX:+PrintGC -XX:+PrintGCDateStamps -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:SurvivorRatio=10 -XX:ThreadStackSize=512 -XX:-UseAdaptiveSizePolicy -XX:+UseCMSInitiatingOccupancyOnly -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseGCLogFileRotation -XX:+UseParallelGC 
+Heap
+ PSYoungGen      total 961536K, used 52470K [0x00000007b0800000, 0x00000007f0800000, 0x00000007f0800000)
+  eden space 874496K, 6% used [0x00000007b0800000,0x00000007b3b3d898,0x00000007e5e00000)
+  from space 87040K, 0% used [0x00000007eb300000,0x00000007eb300000,0x00000007f0800000)
+  to   space 87040K, 0% used [0x00000007e5e00000,0x00000007e5e00000,0x00000007eb300000)
+ ParOldGen       total 1048576K, used 0K [0x0000000770800000, 0x00000007b0800000, 0x00000007b0800000)
+  object space 1048576K, 0% used [0x0000000770800000,0x0000000770800000,0x00000007b0800000)
+ Metaspace       used 5285K, capacity 5500K, committed 5760K, reserved 1056768K
+  class space    used 558K, capacity 623K, committed 640K, reserved 1048576K
